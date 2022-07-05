@@ -154,25 +154,25 @@
 </head>
 <body>
 
-    <ul>
+    <ul><b>
         <li><a class="active" href="default.php">Home</a></li>
         <li style="float:right"><a href="info.php">Info</a></li>
         <li><a href="HTML.php">HTML</a></li>
         <li><a href="CSS.php">CSS</a></li>
         <li><a href="PHP.php">PHP</a></li>
         <li><a href="JAVA.php">JAVA</a></li>
-    </ul>
-    <div class="bg">
-    <div class="header">WELCOME</div>
-    <div id="bg2">
-    <h1 class="rgb">RPL / PPLG</h1>
-    <b class="dark_rgb">Rekayasa Perangkat Lunak / Pengembangan Perangkat Lunak dan Gim</b>
+    </b></ul>
+                    <div class="bg">
+                  <div class="header">WELCOME</div>
+                <div id="bg2">
+            <h1 class="rgb">RPL / PPLG</h1>
+        <b class="dark_rgb">Rekayasa Perangkat Lunak / Pengembangan Perangkat Lunak dan Gim</b>
     <p style="color: black" class="leftalign">
 <b style="color: black">Rekayasa Perangkat Lunak (RPL, atau dalam bahasa Inggris: Software Engineering atau SE)</b> adalah satu bidang profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.
-    </p>
+</p>
     <img src="https://www.projectcubicle.com/wp-content/uploads/2022/05/types-of-software.png-1.webp" style="width:1200px;height:500px;">
     <i style="color: black">source : https://www.projectcubicle.com/5-things-every-business-needs-in-order-to-become-a-success/types-of-software-png-1/</i>
-    </div>
-</div>
-</body>
+            </div>
+        </div>
+    </body>
 </html>
