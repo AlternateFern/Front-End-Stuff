@@ -163,7 +163,7 @@
         <li><a href="JAVA.php">JAVA</a></li>
     </b></ul>
                     <div class="bg">
-                  <div class="header">WELCOME</div>
+                  <b><div class="header">WELCOME</div></b>
                 <div id="bg2">
             <h1 class="rgb">RPL / PPLG</h1>
         <b class="dark_rgb">Rekayasa Perangkat Lunak / Pengembangan Perangkat Lunak dan Gim</b>
