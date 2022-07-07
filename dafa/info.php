@@ -3,24 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>RPL INFO</title>
     <style>
-    .active {
-    background-color: rgb(213, 196, 15);
+
+    .infobar {
+        float: right;
+        width: 80px;
+        background-color: rgb(213, 196, 15);
     }
 
-    
 
-    li a:hover {
-        background-color: rgb(86, 80, 12);
+    #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
     }
 
-    li a:hover:not(.active) {
-        background-color: #111;
+    a {
+    float: left;
+    display: inline;
     }
+
+    #navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+    }
+
+
+    #navbar a:hover:not(.active) {
+    background-color: black;
+    }
+
+    #navbar a:hover, .dropdown:hover .dropbutton .dropdown-content:hover {
+    background-color: rgb(86, 80, 12);
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+         display: block;
+        }
 
     html, body {
         margin:0px;
@@ -29,12 +101,15 @@
     .blackcoloricon {
         font-size: 22px;
         color: black;
-        padding: 5px;
+        padding: 4px;
+        margin-left: 30px;
+        text-align: center;
     }
 
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         max-width: 305px;
+        height: 550px;
         margin: auto;
         text-align: center;
         font-family: Arial;
@@ -57,7 +132,7 @@
     }
     
     .schoolname {
-        color: #6f6f6f;
+        color: #3b3b3b;
         font: arial;
         font-size: 18px;
     }
@@ -97,18 +172,24 @@
         text-shadow: 0px 0px 10px #bfbfbf;
     }
 
-
     </style>
 </head>
 <body>
-    <ul><b>
-        <li><a href="default.php">Home</a></li>
-        <li style="float:right"><a class="active" href="info.php">Info</a></li>
-        <li><a href="HTML.php">HTML</a></li>
-        <li><a href="CSS.php">CSS</a></li>
-        <li><a href="PHP.php">PHP</a></li>
-        <li><a href="JAVA.php">JAVA</a></li>
-    </b></ul>
+    <div id="navbar"><b>
+            <a href="default.php">Home</a>
+            <a class="infobar" style="float:right" href="info.php">Info</a>
+            <div class="dropdown">
+                <button class="dropbtn"><b>About</b>
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="HTML.php">HTML</a>
+                    <a href="CSS.php">CSS</a>
+                    <a href="PHP.php">PHP</a>
+                    <a href="JavaScript.php">JS</a>
+                </div>
+            </div>
+     </b></div>
     
     <div class="bg">
     <h2>Website Created By :</h2>
@@ -122,11 +203,12 @@
         <a class="blackcoloricon" href="https://twitter.com/zFernn_n" target=_blank"><i class="fa fa-twitter"></i></a>
         <a class="blackcoloricon" href="https://www.youtube.com/channel/UCF30Xi9HBdclGLG5ca3H4hg" target=_blank"><i class="fa fa-youtube"></i></a>
         <a class="blackcoloricon" href="https://www.instagram.com/zfernn_/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a class="blackcoloricon" href="https://github.com/YellowFernn" target="_blank"><i class="fa fa-github"></i></a>
         
         <b><p><a href="https://wa.me/6283178955441" target="_blank" class="button">Contact Us</a></p></b>
         
+                </div>
             </div>
         </div>
-</div>
-</body>
+    </body>
 </html>
