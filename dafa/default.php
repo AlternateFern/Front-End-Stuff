@@ -6,19 +6,92 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>RPL</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href="https://css.gg/home-alt.css">
     <style>
 
         .active {
     background-color: rgb(213, 196, 15);
     }
 
-    li a:hover:not(.active) {
-    background-color: #111;
+    #navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
     }
 
-    li a:hover {
+    a {
+    float: left;
+    display: inline;
+    }
+
+    #navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+    }
+
+
+    #navbar a:hover:not(.active) {
+    background-color: black;
+    }
+
+    #navbar a:hover, .dropdown:hover .dropbutton .dropdown-content:hover {
     background-color: rgb(86, 80, 12);
     }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+         display: block;
+        }
+
 
     h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -97,7 +170,7 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.985),rgba(0, 0, 0, 0.6)) , url(https://cdn.discordapp.com/attachments/744035173229789257/993736897782349824/typograph.jpg);
         background-color: #111;
         padding-bottom: 800px;
-
+        padding-top: 10px;
     }
 
     html, body {
@@ -110,8 +183,8 @@
         width: 1200px;
         height: 3000px;
         margin: auto;
-        height: 50hv;
         padding-right : 10px;
+        margin-top: 50px;
 
     }
     
@@ -133,20 +206,40 @@
         font-family: Arial;
     }
 
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + .content {
+        padding-top: 60px;
+    }
+
+
     </style>
 </head>
 <body>
-    <ul><b>
-            <li><a class="active" href="default.php">Home</a></li>
-            <li style="float:right"><a href="info.php">Info</a></li>
-            <li><a href="HTML.php">HTML</a></li>
-            <li><a href="CSS.php">CSS</a></li>
-            <li><a href="PHP.php">PHP</a></li>
-            <li><a href="JAVA.php">JAVA</a></li>
-        </b></ul>
-                    <div class="bg">
-                  <b><div class="header">WELCOME</div></b>
-                <div id="bg2">
+<b><div class="header">WELCOME</div></b>
+    <div id="navbar"><b>
+            <a class="active" href="default.php">Home</a>
+            <a style="float:right" href="info.php">Info</a>
+            <div class="dropdown">
+                <button class="dropbtn"><b>About</b>
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="HTML.php">HTML</a>
+                    <a href="CSS.php">CSS</a>
+                    <a href="PHP.php">PHP</a>
+                    <a href="JavaScript.php">JS</a>
+                </div>
+            </div>
+     </b></div>
+                            <div class="bg">
+                    <div id="bg2">
+                <div class="content">
             <h1 class="rpl">RPL / PPLG</h1>
         <b class="dark_rgb">Rekayasa Perangkat Lunak / Pengembangan Perangkat Lunak dan Gim</b>
     <p style="color: black" class="leftalign">
@@ -157,7 +250,8 @@
     <i style="color: black">source : https://www.projectcubicle.com/5-things-every-business-needs-in-order-to-become-a-success/types-of-software-png-1/</i>
 
         <h1 class="rpl">Sejarah RPL</h1>
-<p class="leftalign"><b style="color: black"> Istilah <i style="color: black">software engineering</i>, pertama kali digunakan pada akhir tahun 1950-an dan sekitar awal 1960-an. Pada tahun 1968, <b style="color: cyan">NATO</b> menyelenggarakan konferensi tentang software engineering di Jerman dan kemudian dilanjutkan pada tahun 1969. Meski penggunaan kata software engineering masukan konferensi tersebut menimbulkan debat tajam tentang aspek engineering dari pengembangan perangkat lunak, banyak pihak yang menganggap konferensi tersebutlah yang menjadi awal tumbuhnya profesi rekayasa perangkat lunak
+<p class="leftalign"><b style="color: black"> Istilah <i style="color: black">software engineering</i>, pertama kali digunakan pada akhir tahun 1950-an dan sekitar awal 1960-an. Pada tahun 1968, <b style="color: #128cc7"> NATO</b>
+menyelenggarakan konferensi tentang software engineering di Jerman dan kemudian dilanjutkan pada tahun 1969. Meski penggunaan kata software engineering masukan konferensi tersebut menimbulkan debat tajam tentang aspek engineering dari pengembangan perangkat lunak, banyak pihak yang menganggap konferensi tersebutlah yang menjadi awal tumbuhnya profesi rekayasa perangkat lunak
                 </b></p>
                 <br>
                 <p class="leftalign" style="font-weight: 1000;"><b style="font-size: 30px;">1945 - 1965: Awal</b></p>
@@ -183,7 +277,24 @@ Pada tahun 1968 dan 1969, komite sains NATO mensponsori dua konferensi tentang r
                 <br>
                 Ketika kecepatan melebihi kemampuan komputer, angka yang terkomputerisasi akhirnya bergeser dan membuat roket berbelok tiba-tiba. Akhirnya terjadi ledakan udara dan roket hancur di angkasa. Segala muatannya pun ikut hancur.</b></p>
                 <i>source: https://www.merdeka.com/teknologi/6-kesalahan-komputer-terfatal-sepanjang-sejarah.html</i>
+                </div>
             </div>
         </div>
+
+        <script>
+            window.onscroll = function () {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                }
+                else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
     </body>
 </html>
