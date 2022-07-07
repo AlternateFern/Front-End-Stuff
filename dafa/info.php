@@ -103,6 +103,7 @@
         color: black;
         padding: 4px;
         margin-left: 30px;
+        margin-bottom: 6px;
         text-align: center;
     }
 
