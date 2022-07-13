@@ -173,11 +173,39 @@
         text-shadow: 0px 0px 10px #bfbfbf;
     }
 
+    .home span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home span:after {
+  content: '\2190';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.home:hover span {
+  padding-left: 25px;
+}
+
+
+.home:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+
+
     </style>
 </head>
 <body>
     <div id="navbar"><b>
-            <a href="default.php">Home</a>
+            <a class="home" href="home.php"><span>Home</span></a>
             <a class="infobar" style="float:right" href="info.php">Info</a>
             <div class="dropdown">
                 <button class="dropbtn"><b>About</b>
@@ -195,14 +223,14 @@
     <div class="bg">
     <h2>Website Created By :</h2>
     <div class="card">
-        <img src="https://cdn.discordapp.com/avatars/543985691336507402/1b39041f55cea801167956dd4d95207d.png?size=4096">
+        <img style="width: 100%" src="https://images-ext-2.discordapp.net/external/9HKz89aYGSq6GWBp38UkmzPZh1yoJEyiY8QmcrjCMrY/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/543985691336507402/a07ffe9d36b15d80e8ac2d24292cc3ed.png">
         <h1>M. Daffa Azriel .F</h1>
         <p class="title">Student</p>
         <p class="schoolname">SMK TI Muhammadiyah</p>
         <div style="margin: 24px 0;">
         <a class="blackcoloricon" href="https://www.facebook.com/profile.php?id=100072579914490" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a class="blackcoloricon" href="https://twitter.com/zFernn_n" target=_blank"><i class="fa fa-twitter"></i></a>
-        <a class="blackcoloricon" href="https://www.youtube.com/channel/UCF30Xi9HBdclGLG5ca3H4hg" target=_blank"><i class="fa fa-youtube"></i></a>
+        <a class="blackcoloricon" href="https://twitter.com/zFernn_n" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="blackcoloricon" href="https://www.youtube.com/channel/UCF30Xi9HBdclGLG5ca3H4hg" target="_blank"><i class="fa fa-youtube"></i></a>
         <a class="blackcoloricon" href="https://www.instagram.com/zfernn_/" target="_blank"><i class="fa fa-instagram"></i></a>
         <a class="blackcoloricon" href="https://github.com/YellowFernn" target="_blank"><i class="fa fa-github"></i></a>
         
