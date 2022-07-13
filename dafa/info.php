@@ -4,49 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>RPL INFO</title>
     <style>
-
-    .infobar {
-        float: right;
-        width: 80px;
-        background-color: rgb(213, 196, 15);
-    }
-
-
-    #navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    }
-
-    a {
-    float: left;
-    display: inline;
-    }
-
-    #navbar a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: all 0.3s ease;
-    }
-
-
-    #navbar a:hover:not(.active) {
-    background-color: black;
-    }
-
-    #navbar a:hover, .dropdown:hover .dropbutton .dropdown-content:hover {
-    background-color: rgb(86, 80, 12);
-    }
 
     .dropdown {
       float: left;
@@ -200,11 +161,10 @@
 }
 
 
-
     </style>
 </head>
 <body>
-    <div id="navbar"><b>
+    <div class="navbar"><b>
             <a class="home" href="home.php"><span>Home</span></a>
             <a class="infobar" style="float:right" href="info.php">Info</a>
             <div class="dropdown">
@@ -239,5 +199,16 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        </script>
     </body>
 </html>
