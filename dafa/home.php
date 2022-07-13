@@ -133,8 +133,8 @@
             <p style="font-weight:lighter; font-size:14px">Rekayasa Perangkat Lunak (RPL, atau dalam bahasa Inggris: Software Engineering atau SE) adalah satu bidang profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.</p>
             <div style="margin: 24px 0">
         <a class="blackcoloricon" href="https://www.facebook.com/profile.php?id=100072579914490" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a class="blackcoloricon" href="https://twitter.com/zFernn_n" target=_blank"><i class="fa fa-twitter"></i></a>
-        <a class="blackcoloricon" href="https://www.youtube.com/channel/UCF30Xi9HBdclGLG5ca3H4hg" target=_blank"><i class="fa fa-youtube"></i></a>
+        <a class="blackcoloricon" href="https://twitter.com/zFernn_n" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="blackcoloricon" href="https://www.youtube.com/channel/UCF30Xi9HBdclGLG5ca3H4hg" target="_blank"><i class="fa fa-youtube"></i></a>
         <a class="blackcoloricon" href="https://www.instagram.com/zfernn_/" target="_blank"><i class="fa fa-instagram"></i></a>
         <a class="blackcoloricon" href="https://github.com/YellowFernn" target="_blank"><i class="fa fa-github"></i></a>
             </div>
