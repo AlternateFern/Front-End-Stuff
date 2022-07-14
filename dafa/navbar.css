@@ -1,3 +1,6 @@
+/* <link href="navbar.css" rel="stylesheet"> */
+
+
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -78,7 +81,7 @@ a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
   .dropdown-content a:hover {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPL Home</title>
+    <title>RPL Test Place</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://css.gg/home.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/EnxJKkoXzxrmA0RA0gUie0K4gvbRLrQhpflyMzwSMvCfk2FA6o9sBLzfWtG5qLzIBIc">
@@ -112,13 +112,8 @@
         }
 
         .about {
-            text-align: center;
             background-color: #111;
             height: 55%;
-        }
-
-        .about h2 {
-            font-weight: lighter;
         }
 
         #loader {
@@ -131,9 +126,9 @@
             margin: -76px 0 0 -76px;
             border: 16px solid #f3f3f3;
             border-radius: 50%;
-            border-top: 16px solid #ffff1a;
-            -webkit-animation: spin 0.52s linear infinite;
-            animation: spin 0.52s linear infinite;
+            border-top: 16px solid #3498db;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
         }
 
         @-webkit-keyframes spin {
@@ -168,26 +163,26 @@
             display: none;
         }
 
-
     </style>
 </head>
-<body onload="myLoading()">
 
-    <div class="navbar" id="myNavbar">
-    <a class="active" href="home.php"><i class="gg-home"></i>Home</a>
-    <a class="infobar" style="float:right" href="info.php"><span>Info</span></a>
-    <a href="HTML.php">HTML</a>
-    <a href="CSS.php">CSS</a>
-    <a href="SCSS.php">SCSS</a>
-    <a href="JS.php">JS</a>
-    <a href="test.php">Test Place</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-</a>
-    </div>
-    <div id="loader"></div>
-        <div id="content" class="animate-bottom">
-        <div class="bg">
+<div id="loader"></div>
+    <div id="content" class="animate-bottom">
+
+    <body onload="myLoading()">
+        <div class="navbar" id="myNavbar">
+        <a href="home.php"><i class="gg-home"></i>Home</a>
+        <a class="infobar" style="float:right" href="info.php"><span>Info</span></a>
+        <a class="active" href="test.php">Test Place</a>
+        <a href="test2.php">Test Place 2</a>
+        <a href="HomeArc.php">Archive</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+        </div>
+
+            <div class="bg">
+            
             <div class="hero-text">
             <h2 style="font-size:50px">WELCOME</h2>
             <hr>
@@ -202,9 +197,8 @@
                 </div>
             </div>
         </div>
-    <div class="about" id="ab">
-        <h2>What Do We Learn?</h2>
     </div>
+    <div class="about" id="ab"></div>
     <script>
         function myFunction() {
             var x = document.getElementById("myNavbar");
@@ -215,11 +209,10 @@
             }
         }
 
-        
         var myVar;
 
             function myLoading() {
-              myVar = setTimeout(showPage, 500);
+              myVar = setTimeout(showPage, 1000);
             }
 
             function showPage() {
@@ -227,6 +220,5 @@
               document.getElementById("content").style.display = "contents";
             }
     </script>
-    </div>
 </body>
 </html>

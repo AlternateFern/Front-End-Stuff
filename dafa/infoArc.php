@@ -135,10 +135,6 @@
         text-shadow: 0px 0px 10px #bfbfbf;
     }
 
-    .card h1 {
-        color: black;
-    }
-
     .home span {
   cursor: pointer;
   display: inline-block;
@@ -170,17 +166,16 @@
 </head>
 <body>
     <div class="navbar"><b>
-            <a class="home" href="home.php"><span>Home</span></a>
-            <a class="infobar" style="float:right; background-color: rgb(213, 196, 15)" href="info.php">Info</a>
+            <a class="home" href="HomeArc.php"><span>Home</span></a>
+            <a class="infobar" style="float:right; background-color: rgb(213, 196, 15)" href="infoArc.php">Info</a>
             <div class="dropdown">
                 <button class="dropbtn"><b>About</b>
                 <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="HTML.php">HTML</a>
-                    <a href="CSS.php">CSS</a>
-                    <a href="PHP.php">PHP</a>
-                    <a href="JS.php">JS</a>
+                    <a href="HtmlArc.php">HTML</a>
+                    <a href="CssArc.php">CSS</a>
+                    <a href="JsArc.php">JS</a>
                 </div>
             </div>
      </b></div>
