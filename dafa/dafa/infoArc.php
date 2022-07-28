@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="color-scheme" content="dark light">
+    <title>RPL Info</title>
+    <style>
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+         display: block;
+        }
+
+    html, body {
+        margin:0px;
+    }
+
+    .blackcoloricon {
+        font-size: 22px;
+        color: black;
+        padding: 4px;
+        margin-left: 30px;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        max-width: 305px;
+        height: 550px;
+        margin: auto;
+        text-align: center;
+        font-family: Arial;
+        background-color: white;
+    }
+
+    /* profile */
+
+    .profile {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 300;
+        margin: auto;
+        text-align: center;
+        font-family: Arial;
+    }
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+    
+    .schoolname {
+        color: #3b3b3b;
+        font: arial;
+        font-size: 18px;
+    }
+
+    a.button:hover, a:hover {
+        opacity: 0.7;
+    }
+
+    a.button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        text-align: center;
+        cursor: pointer;
+        width: 289px;
+        font-size: 18px;
+        color: black;
+        background-color: #f8eb01;
+    text-decoration: white;
+}
+
+    /* end of profile */
+
+    .bg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.985),rgba(0, 0, 0, 0.6)) , url(https://cdn.discordapp.com/attachments/744035173229789257/993736897782349824/typograph.jpg);
+        background-color: #111;
+        margin-top: -20px;
+        padding-bottom: 500px;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 25px;
+        color: white;
+        font-family: Helvetica;
+        text-shadow: 0px 0px 10px #bfbfbf;
+    }
+
+    .home span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home span:after {
+  content: '\2190';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.home:hover span {
+  padding-left: 25px;
+}
+
+
+.home:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar"><b>
+            <a class="home" href="HomeArc.php"><span>Home</span></a>
+            <a class="infobar" style="float:right; background-color: rgb(213, 196, 15)" href="infoArc.php">Info</a>
+            <div class="dropdown">
+                <button class="dropbtn"><b>About</b>
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="HtmlArc.php">HTML</a>
+                    <a href="CssArc.php">CSS</a>
+                    <a href="JsArc.php">JS</a>
+                </div>
+            </div>
+     </b></div>
+    
+    <div class="bg">
+    <h2>Website Created By :</h2>
+    <div class="card">
+        <img style="width: 100%" src="https://images-ext-2.discordapp.net/external/9HKz89aYGSq6GWBp38UkmzPZh1yoJEyiY8QmcrjCMrY/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/543985691336507402/a07ffe9d36b15d80e8ac2d24292cc3ed.png">
+        <h1>M. Daffa Azriel .F</h1>
+        <p class="title">Student</p>
+        <p class="schoolname">SMK TI Muhammadiyah</p>
+        <div style="margin: 24px 0;">
+        <a class="blackcoloricon" href="https://www.facebook.com/profile.php?id=100072579914490" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a class="blackcoloricon" href="https://twitter.com/zFernn_n" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="blackcoloricon" href="https://www.youtube.com/channel/UCF30Xi9HBdclGLG5ca3H4hg" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a class="blackcoloricon" href="https://www.instagram.com/zfernn_/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a class="blackcoloricon" href="https://github.com/YellowFernn" target="_blank"><i class="fa fa-github"></i></a>
+        
+        <b><p><a href="https://wa.me/6283178955441" target="_blank" class="button">Contact Us</a></p></b>
+        
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        </script>
+    </body>
+</html>
