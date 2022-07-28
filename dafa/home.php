@@ -22,7 +22,7 @@
     <a href="CSS.php">CSS</a>
     <a href="SCSS.php">SCSS</a>
     <a href="JS.php">JS</a>
-    <a href="test.php">Test Place</a>
+    <a href="testplace.php">Test Place</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
 </a>
