@@ -1,0 +1,95 @@
+/* <link href="navbar.css" rel="stylesheet"> */
+
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+a {
+    float: left;
+    display: inline;
+}
+
+.active {
+    background-color: rgb(213, 196, 15);
+}
+
+.infobar {
+    float: right;
+    width: 60px;
+    background-color: rgb(80, 86, 12);
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    
+}
+
+.navbar a:hover:not(.active) {
+    background-color: black;
+}
+
+.navbar a:hover {
+    background-color: rgb(86, 80, 12);
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: Arial;
+    margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+  }
+
+  /* vvvvv DROPDOWN vvvvv */
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  .dropdown-content a:hover {
+      background-color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+       display: block;
+      }
+
+/* ^^^^^ DROPDOWN ^^^^^ */
