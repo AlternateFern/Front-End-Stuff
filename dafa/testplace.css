@@ -1,0 +1,335 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  }
+
+  
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.active {
+  background-color: rgb(213, 196, 15);
+}
+
+.infobar {
+  float: right;
+  width: 60px;
+  background-color: rgb(80, 86, 12);
+}
+
+.navbar a {
+  float: left;
+  display: inline;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  
+}
+
+.navbar a:hover:not(.active) {
+  background-color: black;
+}
+
+.navbar a:hover {
+  background-color: rgb(86, 80, 12);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Arial;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+.bg {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.967),rgba(0, 0, 0, 0.766)) , url(https://cdn.discordapp.com/attachments/744035173229789257/993736897782349824/typograph.jpg);
+  height: 100%;
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  padding: 0px 0px 25px 0px;
+  top: -10px;
+}
+
+.bg .hero-text {
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+i {
+  text-align: center;
+  float: left;
+  padding-top: 9px;
+  margin-top: 3px;
+  margin-right: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.icon {
+  margin-top: -10px;
+
+}
+
+
+.infobar span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.infobar span:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.infobar:hover span {
+  padding-right: 25px;
+}
+
+.infobar:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.wrapper {
+  padding: auto;
+  margin: auto;
+  max-width: 1365px;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.home {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.967),rgba(0, 0, 0, 0.766)) , url(https://cdn.discordapp.com/attachments/744035173229789257/993736897782349824/typograph.jpg);
+  width: 100%;
+  height: 700px;
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.aboutsection {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.967),rgba(0, 0, 0, 0.766)) , url(https://wallpapercave.com/wp/wp1908238.jpg);
+  width: 100%;
+  margin: auto;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+
+.aboutsection h2 {
+  margin: auto;
+  padding: 70px 0px 0px 0px; /* T R B L */
+}
+
+@font-face { font-family: 'BebasNeue'; src: url('BebasNeue-Regular.ttf'); }
+@font-face { font-family: 'Square'; src: url('Square.ttf'); }
+@font-face { font-family: 'AmericanPurpose'; src: url('American-Purpose.ttf'); }
+.home h2 {
+  font-family: 'BebasNeue'; 
+  font-size: 6em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  padding: 130px 0px 10px 0px;
+  opacity: 0%;
+/*animation-name: welcome-fade-anim;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards*/
+  animation: welcome-fade-anim 1.5s 1 0.2s forwards;
+}
+
+
+.home p {
+  font-family: 'Square';
+  color:rgba(255, 255, 255, 0.637);
+  opacity: 0%;
+  position: relative;
+  animation: rpl-move-anim 2s 1 0.4s forwards;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+
+@keyframes welcome-fade-anim {
+  100% {opacity: 100%;}
+}
+
+@keyframes rpl-move-anim {
+  from {opacity: 0%; left: -20px;}
+  to {opacity: 100%; left: 0px;}
+}
+
+@keyframes about-btn {
+  from {opacity: 0%; right: -20px;}
+  to {opacity: 100%; right: 0px;}
+}
+
+.tombolabout {
+  position: relative;
+  padding: 15px 20px 15px 20px;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(180deg, rgba(233,186,9,1) 35%, rgba(175,140,18,1) 100%);
+  font-weight: bolder;
+  font-family: Arial;
+  width: 100px;
+  cursor: pointer;
+  color: black;
+  opacity: 0%;
+  right: -20px;
+  animation: about-btn 2s 1 0.7s forwards;
+  transition: all 0.5s ease;
+  text-shadow: 1px 1px 2px black;
+}
+
+.tombolabout:hover {
+  color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px white;
+}
+
+@keyframes about-title {
+  0% {opacity:0; top: -20px;}
+  100% {opacity:1; top: 0px;}
+}
+
+@keyframes about-desc {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+
+.reveal {
+  opacity: 0;
+  position: relative;
+}
+
+.reveal.aktif h2 {
+  opacity: 1;
+}
+
+.aktif.title {
+  animation: about-title 2s 1 0.1s forwards;
+}
+
+.aktif.para {
+  animation: about-desc 2s 1 0.7s forwards;
+}
+
+.aktif.list-anim {
+  animation: list-image 2s 1 0.9s forwards;
+}
+
+
+.ab-title {
+  font-family: 'BebasNeue';
+  font-size: 4.5em;
+  font-weight: bold;
+  position: relative;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  top: -20px;
+}
+
+.ab-p {
+  font-family: 'AmericanPurpose';
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #888;
+  opacity: 0%;
+}
+
+.list p {
+  font-family: 'AmericanPurpose';
+  opacity: 0%;
+  animation: none;
+  transition: all 0.3s ease;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+
+.code-list {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+@keyframes list-image {
+  from {opacity:0%; left: -30px;}
+  to {opacity:100%; left: 0px;}
+}
+
+.list {
+  position: relative;
+  width: 20%;
+  margin: auto;
+  transition: all 0.3s ease;
+  padding: 50px 0px 20px 0px; /* T R B L */
+  left: -20px;
+  opacity: 0%;
+  }
+
+.list:hover {
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 0 20px #111;
+}
+
+.list:hover p {
+  opacity: 100%;
+  cursor: pointer;
+}
+
