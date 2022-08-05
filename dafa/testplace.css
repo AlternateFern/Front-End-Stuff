@@ -201,7 +201,6 @@ i {
   right: -20px;
   animation: about-btn 2s 1 0.7s forwards;
   transition: all 0.5s ease;
-  text-shadow: 1px 1px 2px black;
 }
 
 .tombolabout:hover {
@@ -220,15 +219,54 @@ i {
   to {opacity:1;}
 }
 
+@keyframes a {
+  0% {opacity:0; bottom: 160px;}
+  100% {opacity: 30%; bottom: 175px;}
+}
+
+@keyframes a2 {
+  0% {bottom: 175px;}
+  50% {bottom: 165px;}
+  100% {bottom: 175px;}
+}
+
+@keyframes b {
+  0% {opacity:0; bottom: 365px;}
+  100% {opacity: 30%; bottom: 350px;}
+}
+
+@keyframes b2 {
+  0% {bottom: 350px;}
+  50% {bottom: 365px;}
+  100% {bottom: 350px;}
+}
+
 .edge-shape-bottom {
   background-image: url("a.png");
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  width: 244px;
-  height: 304px;
-  display: flex;
+  width: 236px;
+  height: 159px;
   margin: auto;
+  right: 430px;
+  bottom: 110px;
+  animation: a 3s 1 0.9s forwards, a2 3s infinite 4s;
+  opacity: 0;
+}
+
+.edge-shape-top {
+  background-image: url("b.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 236px;
+  height: 159px;
+  margin: auto;
+  bottom: 350px;
+  left: 430px;
+  animation: b 3s 1 0.9s forwards, b2 3s infinite 4s;
+  opacity: 0;
 }
 
 .reveal {
