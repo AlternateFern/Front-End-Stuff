@@ -45,38 +45,10 @@
   background-color: rgb(86, 80, 12);
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: Arial;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover {
   background-color: #111;
 }
 
-.bg {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.967),rgba(0, 0, 0, 0.766)) , url(https://cdn.discordapp.com/attachments/744035173229789257/993736897782349824/typograph.jpg);
-  height: 100%;
-  background-color: #111;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  margin: auto;
-  padding: 0px 0px 25px 0px;
-  top: -10px;
-}
 
 .bg .hero-text {
   margin: auto;
@@ -248,6 +220,16 @@ i {
   to {opacity:1;}
 }
 
+.edge-shape-bottom {
+  background-image: url("a.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 244px;
+  height: 304px;
+  display: flex;
+  margin: auto;
+}
 
 .reveal {
   opacity: 0;
