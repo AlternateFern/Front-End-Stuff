@@ -262,9 +262,31 @@ i {
 
 @keyframes e2 {
   0% {bottom: 820px;}
-  50% {bottom: 810px;}
+  50% {bottom: 800px;}
   100% {bottom: 820px;}
 }
+
+@keyframes f {
+  0% {left: 566px;}
+  100% {opacity: 55%; left: 522px;}
+}
+
+@keyframes f2 {
+  0% {left: 522px;}
+  50% {left: 534px;}
+  100% {left: 522px;}
+}
+
+@keyframes g {
+  0% {transform: rotate(0deg)}
+  100% {opacity: 40%; transform: rotate(360deg);}
+}
+
+@keyframes g2 {
+  0% {transform: rotate(360deg);}
+  100% {transform: rotate(720deg);}
+}
+
 
 
 .edge-shape-bottom {
@@ -334,7 +356,35 @@ i {
   bottom: 800px;
   right: 555px;
   opacity: 0;
-  animation: e 3.3s 1 1s forwards, e2 3.2s infinite 3.4s;
+  animation: e 3.3s 1 1s forwards, e2 3.8s ease-out infinite 3.4s;
+}
+
+.f {
+  background-image: url("f.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 198px;
+  height: 68px;
+  margin: auto;
+  bottom: 460px;
+  left: 566px;
+  opacity: 0;
+  animation: f 3.3s 1 1s forwards, f2 3.8s ease-out infinite 3.6s;
+}
+
+.g {
+  background-image: url("g.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 200px;
+  height: 201px;
+  margin: auto;
+  bottom: 630px;
+  right: 180px;
+  opacity: 0;
+  animation: g 3.5s 1 1s forwards, g2 3s infinite 4.1s;
 }
 
 .megamind-lol {
