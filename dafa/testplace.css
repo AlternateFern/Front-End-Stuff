@@ -111,7 +111,7 @@ i {
 }
 
 .home {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.967) 5%,rgba(0, 0, 0, 0.9) 100%) , url(https://cdn.discordapp.com/attachments/744035173229789257/993736897782349824/typograph.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.967) 5%,rgba(0, 0, 0, 0.9) 100%) , url("typograph.jpg");
   width: 100%;
   height: 700px;
   background-color: #111;
@@ -209,18 +209,10 @@ i {
   text-shadow: 1px 1px 2px white;
 }
 
-@keyframes about-title {
-  0% {opacity:0; top: -20px;}
-  100% {opacity:1; top: 0px;}
-}
-
-@keyframes about-desc {
-  from {opacity:0;}
-  to {opacity:1;}
-}
+/* v shape animation thingy idk what the name brooo v */
 
 @keyframes a {
-  0% {opacity:0; bottom: 160px;}
+  0% {bottom: 160px;}
   100% {opacity: 30%; bottom: 175px;}
 }
 
@@ -231,7 +223,7 @@ i {
 }
 
 @keyframes b {
-  0% {opacity:0; bottom: 365px;}
+  0% {bottom: 365px;}
   100% {opacity: 30%; bottom: 350px;}
 }
 
@@ -240,6 +232,40 @@ i {
   50% {bottom: 365px;}
   100% {bottom: 350px;}
 }
+
+@keyframes c {
+  0% {bottom: 666px;}
+  100% {opacity: 25%; bottom: 623px;}
+}
+
+@keyframes c2 {
+  0% {bottom: 623px;}
+  50% {bottom: 638px;}
+  100% {bottom: 623px;}
+}
+
+@keyframes d {
+  0% {bottom: 400px;}
+  100% {opacity: 27%; bottom: 420px;}
+}
+
+@keyframes d2 {
+  0% {bottom: 420px;}
+  50% {bottom: 405px;}
+  100% {bottom: 420px;}
+}
+
+@keyframes e {
+  0% {bottom: 800px;}
+  100% {opacity: 50%; bottom: 820px;}
+}
+
+@keyframes e2 {
+  0% {bottom: 820px;}
+  50% {bottom: 810px;}
+  100% {bottom: 820px;}
+}
+
 
 .edge-shape-bottom {
   background-image: url("a.png");
@@ -268,6 +294,65 @@ i {
   animation: b 3s 1 0.9s forwards, b2 3s infinite 4s;
   opacity: 0;
 }
+
+.c {
+  background-image: url("c.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 83px;
+  height: 83px;
+  margin: auto;
+  bottom: 666px;
+  right: 211px;
+  opacity: 0;
+  animation: c 3s 1 1s forwards, c2 3s infinite 3.2s;
+}
+
+.d {
+  background-image: url("d.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 83px;
+  height: 83px;
+  margin: auto;
+  bottom: 400px;
+  left: 211px;
+  opacity: 0;
+  animation: d 3.3s 1 1s forwards, d2 3.2s infinite 3.4s;
+}
+
+.e {
+  background-image: url("e.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 44px;
+  height: 93px;
+  margin: auto;
+  bottom: 800px;
+  right: 555px;
+  opacity: 0;
+  animation: e 3.3s 1 1s forwards, e2 3.2s infinite 3.4s;
+}
+
+.megamind-lol {
+  background-image: url("https://i.imgflip.com/64sz4u.png");
+}
+
+/* end of header animation stuffs */
+
+@keyframes about-title {
+  0% {opacity:0; top: -20px;}
+  100% {opacity:1; top: 0px;}
+}
+
+@keyframes about-desc {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
 
 .reveal {
   opacity: 0;
